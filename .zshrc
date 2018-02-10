@@ -1,12 +1,13 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Alexis/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
-DEFAULT_USER="Alexis"
+# DEFAULT_USER="Alexis"
+DEFAULT_USER="$USER"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -46,10 +47,13 @@ DEFAULT_USER="Alexis"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew gitignore go node npm pod themes)
+plugins=(brew gitignore pod themes)
 
-# Installation of zsh-autosuggestions
+# plugins+=(go)
+# plugins+=(node npm)
+plugins+=(ruby rails rake)
 plugins+=(zsh-autosuggestions)
+plugins+=(zsh-syntax-highlighting)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
@@ -88,6 +92,7 @@ alias dots="cd ~/Development/Node\ js/Projects/dots-and-boxes"
 alias inspire="cd ~/Development/Web/Projects/inspire-me"
 alias patterns="cd ~/Development/EdNinja/Patterns"
 alias swift="cd ~/Development/iOS/Programming/Swift"
+alias legare="cd ~/Development/Asynchrony\ Labs/legare-ios"
 
 alias wallpapershd="~/Library/Containers/com.stuckpixelinc.wallpapershdfull/Data/Library/Application Support/WallpapersHD"
 
