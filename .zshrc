@@ -87,13 +87,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="cd ~/.zshrc"
 # alias ohmyzsh="cd ~/.oh-my-zsh"
 
-# Paths
-alias dots="cd ~/Development/Node\ js/Projects/dots-and-boxes"
-alias inspire="cd ~/Development/Web/Projects/inspire-me"
-alias patterns="cd ~/Development/EdNinja/Patterns"
-alias swift="cd ~/Development/iOS/Programming/Swift"
-alias legare="cd ~/Development/Asynchrony\ Labs/legare-ios"
-
 alias wallpapershd="~/Library/Containers/com.stuckpixelinc.wallpapershdfull/Data/Library/Application Support/WallpapersHD"
 
 # Finder
