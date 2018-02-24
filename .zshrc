@@ -106,6 +106,7 @@ alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true; k
 eval $(thefuck --alias)
 
 ### PATHS ###
-export GOPATH=$HOME/Development/Go
-export GOBIN=$HOME/Development/Go/bin
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=$HOME/Development/Go
+# export GOBIN=$HOME/Development/Go/bin
+# export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
