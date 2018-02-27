@@ -56,6 +56,13 @@ plugins+=(ruby rails rake)
 plugins+=(zsh-autosuggestions)
 plugins+=(zsh-syntax-highlighting)
 
+# Include Z
+. ~/z.sh
+
+# Include thefuck
+
+eval $(thefuck --alias)
+
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -96,8 +103,6 @@ alias showicons="defaults write com.apple.finder CreateDesktop -bool true; killa
 
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder"
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder"
-
-eval $(thefuck --alias)
 
 ### PATHS ###
 # export GOPATH=$HOME/Development/Go
