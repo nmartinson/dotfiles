@@ -47,17 +47,33 @@ DEFAULT_USER="$USER"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew gitignore themes)
 
+# MacOS
+plugins=(brew gitignore themes)
+# plugins+=(cloudapp osx)
+
+# Build Tools
+plugins+=(docker heroku postgres)
+
+# FS Jumping
+plugins+=(z)
+
+# iOS
 plugins+=(pod)
+
+# Go
 # plugins+=(go)
+
+# Node
 # plugins+=(node npm)
+
+#Ruby
 plugins+=(ruby rails rake)
+# plugins+=(bundler gem)
+
+# Misc
 plugins+=(zsh-autosuggestions)
 plugins+=(zsh-syntax-highlighting)
-
-# Include Z
-. ~/z.sh
 
 # Include thefuck
 
