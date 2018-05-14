@@ -130,8 +130,20 @@ alias showicons="defaults write com.apple.finder CreateDesktop -bool true; killa
 alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder"
 alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder"
 
+alias legare="open ~/Development/legare-ios/legare.xcworkspace"
+alias legare-ios="cd ~/Development/legare-ios/"
+alias legare-platform="cd ~/Development/legare-platform/"
+
+alias wayfinder-android="cd ~/Development/wayfinder-android/MyCompass"
+alias wayfinder-ios="cd ~/Development/wayfinder-ios/ASLMyCompass"
+alias wayfinder-ios-app="open ~/Development/wayfinder-ios/ASLMyCompass"
+
 ### PATHS ###
 # export GOPATH=$HOME/Development/Go
 # export GOBIN=$HOME/Development/Go/bin
 # export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
