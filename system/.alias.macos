@@ -1,0 +1,8 @@
+alias chrome="open -a ~/Applications/Google\ Chrome.app"
+
+# Finder
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder"
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder"
