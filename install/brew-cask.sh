@@ -14,14 +14,18 @@ fi
 echo "==> Installing apps"
 
 apps=(
+    1password
     alfred
     android-studio
+    dash
     firefox
     google-chrome
+    google-backup-and-sync
     iterm2
     postman
     slack
     teamviewer
+    transmission
     visual-studio-code
     vlc
 )
