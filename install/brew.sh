@@ -16,6 +16,7 @@ echo "==> Installing formulae"
 
 formulae=(
     diff-so-fancy
+    dockutil
     mongodb
     node
     ruby
