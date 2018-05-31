@@ -11,4 +11,3 @@ if is-macos; then
 fi
 
 eval $(thefuck --alias)
-

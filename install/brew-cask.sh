@@ -40,4 +40,3 @@ for app in "${apps[@]}"; do
         brew cask ls --versions "$app"
     fi
 done
-

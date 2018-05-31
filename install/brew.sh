@@ -34,4 +34,3 @@ for formula in "${formulae[@]}"; do
         brew ls --versions "$formula"
     fi
 done
-
