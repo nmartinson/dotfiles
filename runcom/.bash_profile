@@ -9,3 +9,6 @@ if is-macos; then
         [ -f "$DOTFILE" ] && . "$DOTFILE"
     done
 fi
+
+eval $(thefuck --alias)
+
