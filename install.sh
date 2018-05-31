@@ -16,3 +16,4 @@ ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
 # Package managers & packages
 
 source "$DOTFILES_DIR/install/brew.sh"
+source "$DOTFILES_DIR/install/brew-cask.sh"
