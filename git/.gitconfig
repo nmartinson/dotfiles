@@ -1,0 +1,26 @@
+[user]
+	name = Alexis Ortega
+	email = alexis.oc3@gmail.com
+[alias]
+	lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
+	ls = log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate
+	ll = log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --numstat
+	lnc = log --pretty=format:'%h\\ %s\\ [%cn]'
+	lds = log --pretty=format:'%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --date=short
+	ld = log --pretty=format:'%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --date=relative
+	le = log --oneline --decorate
+	praise = blame
+	lgf = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>' --abbrev-commit
+	tidy = !git branch | grep -v \\* | xargs git branch -d
+[clean]
+	requireForce = true
+[color]
+	ui = true
+[core]
+	excludesfile = ~/.gitignore_global
+[diff]
+	algorithm = default
+[push]
+	default = simple
+[rebase]
+	autostash = false
