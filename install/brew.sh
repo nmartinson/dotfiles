@@ -29,7 +29,7 @@ for formula in "${formulae[@]}"; do
         echo "==> Installing $formula"
         brew install $formula
     else
-        echo "==> $package is already installed"
+        echo "==> $formula is already installed"
         brew ls --versions "$formula"
     fi
 done
