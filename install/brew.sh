@@ -22,6 +22,7 @@ formulae=(
     ruby
     thefuck
     tree
+    zsh
 )
 
 for formula in "${formulae[@]}"; do

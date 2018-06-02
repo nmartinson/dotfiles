@@ -1,3 +1,9 @@
+# # Activate zsh completions
+# fpath=(/usr/local/share/zsh-completions $fpath)
+
+# # Rebuild zcompdump
+# rm -f ~/.zcompdump; compinit
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
