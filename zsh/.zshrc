@@ -14,6 +14,7 @@ export ZSH=~/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 # DEFAULT_USER="Alexis"
 DEFAULT_USER="$USER"
 
