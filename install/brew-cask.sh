@@ -1,14 +1,14 @@
 if ! is-macos -o ! -is-executable brew; then
-    echo "Skipped: Homebrew-Cask"
+    echo "Skipped: homebrew/cask"
     return
 fi
 
 brew cask > /dev/null 2>&1
 if [ $? -ne 0 ]; then
-    echo "==> Installing brew cask"
+    echo "==> Installing homebrew/cask"
     brew tap homebrew/cask
 else
-    echo "==> brew cask is already installed"
+    echo "==> homebrew/cask is already installed"
 fi
 
 echo "==> Installing apps"
