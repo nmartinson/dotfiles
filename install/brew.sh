@@ -23,7 +23,8 @@ formulae=(
     thefuck
     tree
     zsh
-    zsh-completions
+    zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 for formula in "${formulae[@]}"; do

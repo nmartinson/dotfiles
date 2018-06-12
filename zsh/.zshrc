@@ -14,7 +14,6 @@ export ZSH=~/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="agnoster"
-ZSH_THEME="robbyrussell"
 # DEFAULT_USER="Alexis"
 DEFAULT_USER="$USER"
 
@@ -92,8 +91,10 @@ plugins+=(ruby rails rake)
 # plugins+=(bundler gem)
 
 # Misc
-plugins+=(zsh-autosuggestions)
-plugins+=(zsh-syntax-highlighting)
+# plugins+=(zsh-autosuggestions)
+# plugins+=(zsh-syntax-highlighting)
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Include thefuck
 
