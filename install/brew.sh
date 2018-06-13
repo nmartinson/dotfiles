@@ -15,6 +15,7 @@ brew update
 echo "==> Installing formulae"
 
 formulae=(
+    cocoapods
     diff-so-fancy
     dockutil
     mongodb
