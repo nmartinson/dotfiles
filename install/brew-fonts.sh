@@ -8,9 +8,8 @@ brew tap caskroom/fonts
 echo "==> Installing fonts"
 
 fonts=(
+    font-droid-sans-mono-for-powerline
     font-source-code-pro
-    font-source-sans-pro
-    font-source-serif-pro
 )
 
 for fonts in "${fonts[@]}"; do
