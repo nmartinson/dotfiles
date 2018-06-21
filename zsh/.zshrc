@@ -147,7 +147,7 @@ alias wayfinder-ios-app="open ~/Development/wayfinder-ios/ASLMyCompass"
 # export GOPATH=$HOME/Development/Go
 # export GOBIN=$HOME/Development/Go/bin
 # export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+# export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
