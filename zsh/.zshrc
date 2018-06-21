@@ -72,7 +72,7 @@ plugins=(brew gitignore themes)
 # plugins+=(cloudapp osx)
 
 # Build Tools
-plugins+=(docker heroku postgres)
+# plugins+=(docker heroku postgres)
 
 # FS Jumping
 plugins+=(z)
@@ -134,14 +134,6 @@ source $ZSH/oh-my-zsh.sh
 for FILE in ~/.{env,aliases,function}; do
     [ -r "$FILE" ] && [ -f "$FILE" ] && . "$FILE"
 done
-
-alias legare="open ~/Development/legare-ios/legare.xcworkspace"
-alias legare-ios="cd ~/Development/legare-ios/"
-alias legare-platform="cd ~/Development/legare-platform/"
-
-alias wayfinder-android="cd ~/Development/wayfinder-android/MyCompass"
-alias wayfinder-ios="cd ~/Development/wayfinder-ios/ASLMyCompass"
-alias wayfinder-ios-app="open ~/Development/wayfinder-ios/ASLMyCompass"
 
 ### PATHS ###
 # export GOPATH=$HOME/Development/Go
