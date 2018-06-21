@@ -87,7 +87,8 @@ plugins+=(pod)
 # plugins+=(node npm)
 
 #Ruby
-plugins+=(ruby rails rake)
+plugins+=(ruby)
+# plugins+=(rails rake)
 # plugins+=(bundler gem)
 
 # Misc
@@ -145,3 +146,4 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$ANDROID_HOME/tools:$PATH"
 export PATH="$ANDROID_HOME/platform-tools:$PATH"
 export PATH="$ANDROID_HOME/emulator:$PATH"
+export PATH="$ANDROID_HOME/tools/bin:$PATH"
