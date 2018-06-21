@@ -131,12 +131,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Finder
-alias hideicons="defaults write com.apple.finder CreateDesktop -bool false; killall Finder"
-alias showicons="defaults write com.apple.finder CreateDesktop -bool true; killall Finder"
-
-alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false; killall Finder"
-alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder"
+for FILE in ~/.{env,aliases,function}; do
+    [ -r "$FILE" ] && [ -f "$FILE" ] && . "$FILE"
+done
 
 alias legare="open ~/Development/legare-ios/legare.xcworkspace"
 alias legare-ios="cd ~/Development/legare-ios/"
