@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "==> Setting up your Mac..." 
+echo "==> Setting up your Mac..."
 
 export DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -11,16 +11,7 @@ export PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Package managers & packages
 
-source "$DOTFILES_DIR/install/brew.sh"
-source "$DOTFILES_DIR/install/brew-cask.sh"
-source "$DOTFILES_DIR/install/brew-fonts.sh"
-source "$DOTFILES_DIR/install/brew-versions.sh"
-source "$DOTFILES_DIR/install/zsh.sh"
-source "$DOTFILES_DIR/install/oh-my-zsh.sh"
-
-# Bunch of symlinks
-
-ln -sfv "$DOTFILES_DIR/runcom/.bash_profile" ~
-ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
-ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
-ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
+source "$DOTFILES_DIR/bash/install.sh"
+source "$DOTFILES_DIR/brew/install.sh"
+source "$DOTFILES_DIR/git/install.sh"
+source "$DOTFILES_DIR/zsh/install.sh"
