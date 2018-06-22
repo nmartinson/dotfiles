@@ -12,4 +12,4 @@ source "$DOTFILES_DIR/brew/brew-cask.sh"
 source "$DOTFILES_DIR/brew/brew-fonts.sh"
 source "$DOTFILES_DIR/brew/brew-versions.sh"
 
-cp source "$DOTFILES_DIR/brew/com.googlecode.iterm2.plist" ~/Library/Preferences
+cp "$DOTFILES_DIR/brew/com.googlecode.iterm2.plist" ~/Library/Preferences
