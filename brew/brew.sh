@@ -18,6 +18,7 @@ formulae=(
     cocoapods
     diff-so-fancy
     dockutil
+    htop
     mongodb
     node
     ruby
