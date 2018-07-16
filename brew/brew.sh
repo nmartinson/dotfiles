@@ -21,6 +21,7 @@ formulae=(
     htop
     mongodb
     node
+    postgresql
     ruby
     thefuck
     tree
