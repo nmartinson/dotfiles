@@ -2,7 +2,6 @@
 	name = Alexis Ortega
 	email = alexis.oc3@gmail.com
 [alias]
-	lbsd = !git for-each-ref --sort=-committerdate refs/remotes/ --format='%(color:red)%(objectname:short)%(color:reset)^%(color:yellow)%(refname:short)%(color:reset)^(%(color:green)%(committerdate:relative)%(color:reset))^<%(color:blue)%(authorname)%(color:reset)>' | column -t -s '^'
 	ld = log --pretty=format:'%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --date=relative
 	lds = log --pretty=format:'%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate --date=short
 	le = log --oneline --decorate
@@ -12,6 +11,7 @@
 	lnc = log --pretty=format:'%h\\ %s\\ [%cn]'
 	ls = log --pretty=format:'%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]' --decorate
 	praise = blame
+	remotes = !git for-each-ref --sort=-committerdate refs/remotes/ --format='%(color:red)%(objectname:short)%(color:reset)^%(color:yellow)%(refname:short)%(color:reset)^(%(color:green)%(committerdate:relative)%(color:reset))^<%(color:blue)%(authorname)%(color:reset)>' | column -t -s '^'
 	tidy = !git branch | grep -v \\* | xargs git branch -d
 [clean]
 	requireForce = true
