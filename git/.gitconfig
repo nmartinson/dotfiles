@@ -23,6 +23,8 @@
 	excludesfile = ~/.gitignore_global
 [diff]
 	algorithm = default
+[merge]
+	conflictstyle = merge
 [push]
 	default = simple
 [rebase]
