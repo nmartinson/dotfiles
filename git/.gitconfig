@@ -13,6 +13,7 @@
 	praise = blame
 	remotes = !git for-each-ref --sort=-committerdate refs/remotes/ --format='%(color:red)%(objectname:short)%(color:reset)^%(color:yellow)%(refname:short)%(color:reset)^(%(color:green)%(committerdate:relative)%(color:reset))^<%(color:blue)%(authorname)%(color:reset)>' | column -t -s '^'
 	tidy = !git branch | grep -v \\* | xargs git branch -d
+	zip = !git archive --format=zip --output=latest.zip HEAD
 [clean]
 	requireForce = true
 [color]
