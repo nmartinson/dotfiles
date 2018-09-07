@@ -1,15 +1,23 @@
 #!/bin/bash
 
-echo "==> Setting up rvm..."
+if test ! $(which rvm); then
+    echo "==> Installing rvm"
+    \curl -L https://get.rvm.io | bash -s stable --auto-dotfiles
+    source ~/.rvm/scripts/rvm
+else
+    echo "==> rvm is already installed"
+fi
 
-\curl -L https://get.rvm.io | bash -s stable --auto-dotfiles
+if test ! $(which ruby); then
+    echo "==> Installing ruby"
+    rvm use ruby --install --default
+else
+    echo "==> ruby is already installed"
+fi
 
-source ~/.rvm/scripts/rvm
-
-echo "==> Setting up ruby..."
-
-rvm use ruby --install --default
-
-echo "==> Setting up rails..."
-
-gem install rails --no-ri --no-rdoc
+if test ! $(which rails); then
+    echo "==> Installing rails"
+    gem install rails --no-ri --no-rdoc
+else
+    echo "==> rails is already installed"
+fi
