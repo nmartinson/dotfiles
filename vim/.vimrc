@@ -1,4 +1,10 @@
 syntax on
+
+" Turn on line numbers
+set number
+" or
+" set nu
+
 colorscheme default
 
 filetype plugin indent on
