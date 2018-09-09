@@ -1,21 +1,42 @@
+" Turn syntax highlighting on
 syntax on
+
 colorscheme default
+
+" For plugins to load correctly
 filetype plugin indent on
 
-:set number " turn line numbers on
-" :set nu " turn line numbers on
-" :set nonumber  " turn line numbers off
-" :set number!   " toggle line numbers
+" turn line numbers on
+set number
+" set nu
 
-" :set relativenumber " turn relative line numbers on
-" :set norelativenumber " turn relative line numbers off
-" :set relativenumber!   " toggle relative line numbers
+" turn line numbers off
+" set nonumber
 
-set ic " incase-sensitive search
-" set noic " case-sensitive search
+" toggle line numbers
+" set number!
 
-set tabstop=4 " show existing tab with 4 spaces width
+" turn relative line numbers on
+" set relativenumber
 
-set shiftwidth=4 " when indenting with '>', use 4 spaces width
+" turn relative line numbers off
+" set norelativenumber
 
-set expandtab " on pressing tab, insert 4 spaces
+" toggle relative line numbers
+" set relativenumber!
+
+" incase-sensitive search
+set ic
+
+" case-sensitive search
+" set noic
+
+" show existing tab with 4 spaces width
+set tabstop=4
+
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+
+" on pressing tab, insert 4 spaces
+set expandtab
+
