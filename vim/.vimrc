@@ -2,12 +2,12 @@ syntax on
 colorscheme default
 filetype plugin indent on
 
-" :set number " turn line numbers on
+:set number " turn line numbers on
 " :set nu " turn line numbers on
 " :set nonumber  " turn line numbers off
 " :set number!   " toggle line numbers
 
-:set relativenumber " turn relative line numbers on
+" :set relativenumber " turn relative line numbers on
 " :set norelativenumber " turn relative line numbers off
 " :set relativenumber!   " toggle relative line numbers
 
