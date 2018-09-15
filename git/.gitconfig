@@ -28,6 +28,9 @@
 	excludesfile = ~/.gitignore_global
 [diff]
 	algorithm = default
+[grep]
+  extendRegexp = true
+  lineNumber = true
 [merge]
 	conflictstyle = merge
 [push]
