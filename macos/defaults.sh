@@ -814,6 +814,14 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
 
 ###############################################################################
+# Opera & Opera Developer                                                     #
+###############################################################################
+
+# Expand the print dialog by default
+# defaults write com.operasoftware.Opera PMPrintingExpandedStateForPrint2 -boolean true
+# defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2 -boolean true
+
+###############################################################################
 # Do some clean up work.
 ###############################################################################
 
