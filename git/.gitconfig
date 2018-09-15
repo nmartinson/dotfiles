@@ -34,18 +34,18 @@
 [merge]
 	conflictstyle = merge
 [pretty]
-		dateformat = "%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
-		#                        │    │       │           │           └─ committer name
-		#                        │    │       │           └─ subject
-		#                        │    │       └─ ref names
-		#                        │    └─ author date
-		#                        └─ abbreviated commit hash
-		simpleformat = "%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
-		#                          │      │       	  │           │
-		#                          │      │       	  │           └─ committer name
-		#                          │      │       	  └─ subject
-		#                          │      └─ ref names
-		#                          └─ abbreviated commit hash
+	dateformat = "%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+	#                        │    │       │           │           └─ committer name
+	#                        │    │       │           └─ subject
+	#                        │    │       └─ ref names
+	#                        │    └─ author date
+	#                        └─ abbreviated commit hash
+	simpleformat = "%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]"
+	#                          │      │       	  │           │
+	#                          │      │       	  │           └─ committer name
+	#                          │      │       	  └─ subject
+	#                          │      └─ ref names
+	#                          └─ abbreviated commit hash
 [push]
 	default = simple
 [rebase]
