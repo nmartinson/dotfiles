@@ -18,3 +18,5 @@ source "$DOTFILES_DIR/brew/install.sh"
 source "$DOTFILES_DIR/git/install.sh"
 source "$DOTFILES_DIR/ruby/install.sh"
 source "$DOTFILES_DIR/zsh/install.sh"
+
+sh "$DOTFILES_DIR/macos/defaults.sh"
