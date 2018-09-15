@@ -22,7 +22,6 @@ formulae=(
     mongodb
     node
     postgresql
-    ruby
     thefuck
     tree
     zsh
