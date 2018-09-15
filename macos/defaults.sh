@@ -767,6 +767,13 @@ defaults write com.apple.commerce AutoUpdate -bool false
 defaults write com.apple.commerce AutoUpdateRestartRequired -bool false
 
 ###############################################################################
+# Photos                                                                      #
+###############################################################################
+
+# Prevent Photos from opening automatically when devices are plugged in
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+###############################################################################
 # Do some clean up work.
 ###############################################################################
 
