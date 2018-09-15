@@ -24,6 +24,8 @@ apps=(
     google-backup-and-sync
     iterm2
     postman
+    qlmarkdown
+    quicklook-json
     slack
     teamviewer
     transmission
