@@ -913,26 +913,36 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 
 ###############################################################################
-# Do some clean up work.
+# Kill affected applications                                                  #
 ###############################################################################
 
 apps=(
-	# Activity Monitor
-	# Address Book
-	# Calendar
-	# cfprefsd
-	# Contacts
+	Activity Monitor
+	Address Book
+	Calendar
+	cfprefsd
+	Contacts
 	Dock
 	Finder
-	# iCal
-	# Mail
-	# Messages
-	# Safari
-	# SystemUIServer
-	# Terminal
-	# Twitter
+	Google Chrome
+	Google Chrome Canary
+	iCal
+	Mail
+	Messages
+	Opera
+	Photos
+	Safari
+	SizeUp
+	Spectacle
+	SystemUIServer
+	Terminal
+	Transmission
+	Tweetbot
+	Twitter
 )
 
 for app in "${apps[@]}"; do
 	killall "${app}" > /dev/null 2>&1
 done
+
+echo "Done. Note that some of these changes require a logout/restart to take effect."
