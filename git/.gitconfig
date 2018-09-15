@@ -17,7 +17,12 @@
 [clean]
 	requireForce = true
 [color]
-	ui = true
+	branch = auto
+	diff = auto
+	interactive = auto
+	pager = true
+	status = auto
+	ui = auto
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
