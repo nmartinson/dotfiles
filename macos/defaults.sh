@@ -736,6 +736,37 @@ hash tmutil &> /dev/null && sudo tmutil disablelocal
 # defaults write com.apple.QuickTimePlayerX MGPlayMovieOnOpen -bool true
 
 ###############################################################################
+# Mac App Store                                                               #
+###############################################################################
+
+# Enable the WebKit Developer Tools in the Mac App Store
+# defaults write com.apple.appstore WebKitDeveloperExtras -bool true
+
+# Enable Debug Menu in the Mac App Store
+# defaults write com.apple.appstore ShowDebugMenu -bool true
+
+# Enable the automatic update check
+defaults write com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+
+# Disable check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 0
+
+# Disable download of available updates in background
+defaults write com.apple.SoftwareUpdate AutomaticDownload -int 0
+
+# Install System data files & security updates
+defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
+
+# Disable automatically download of apps purchased on other Macs
+defaults write com.apple.SoftwareUpdate ConfigDataInstall -int 0
+
+# Turn off app auto-update
+defaults write com.apple.commerce AutoUpdate -bool false
+
+# Disable the App Store to reboot machine on macOS updates
+defaults write com.apple.commerce AutoUpdateRestartRequired -bool false
+
+###############################################################################
 # Do some clean up work.
 ###############################################################################
 
