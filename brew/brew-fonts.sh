@@ -12,13 +12,13 @@ fonts=(
     font-source-code-pro
 )
 
-for fonts in "${fonts[@]}"; do
-    brew cask ls "$fonts" > /dev/null 2>&1
+for font in "${fonts[@]}"; do
+    brew cask ls "$font" > /dev/null 2>&1
     if [ $? -ne 0 ]; then
-        echo "==> Installing $fonts"
-        brew cask install $fonts
+        echo "==> Installing $font"
+        brew cask install $font
     else
-        echo "==> $fonts already installed"
-        brew cask ls --versions "$fonts"
+        echo "==> $font already installed"
+        brew cask ls --versions "$font"
     fi
 done
