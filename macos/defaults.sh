@@ -689,7 +689,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 # Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+hash tmutil &> /dev/null && sudo tmutil disable
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -945,4 +945,28 @@ for app in "${apps[@]}"; do
 	killall "${app}" > /dev/null 2>&1
 done
 
-echo "Done. Note that some of these changes require a logout/restart to take effect."
+# Wait a bit before moving on...
+sleep 1
+
+# ...and then.
+echo "Success! Defaults are set. Some changes will not take effect until you reboot your machine."
+
+# See if the user wants to reboot.
+function reboot() {
+  read -p "Do you want to reboot your computer now? (y/N)" choice
+  case "$choice" in
+    y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
+    n | N | No | no) echo "No"; exit;; # If n | no, exit
+    * ) echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return;;
+  esac
+}
+
+# Call on the function
+if [[ "Yes" == $(reboot) ]]
+then
+  echo "Rebooting."
+  sudo reboot
+  exit 0
+else
+  exit 1
+fi
