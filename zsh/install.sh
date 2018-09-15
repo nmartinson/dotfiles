@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "==> Setting up zsh..."
 
 export DOTFILES_DIR

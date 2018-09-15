@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "==> Setting up vim..."
 
 export DOTFILES_DIR

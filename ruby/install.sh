@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if test ! $(which rvm); then
     echo "==> Installing rvm"
     \curl -L https://get.rvm.io | bash -s stable --auto-dotfiles

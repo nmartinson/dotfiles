@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "==> Setting up brew..."
 
 export DOTFILES_DIR

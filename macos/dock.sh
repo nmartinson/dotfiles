@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo "==> Setting up your dock..." 
 
 dockutil --no-restart --remove all
