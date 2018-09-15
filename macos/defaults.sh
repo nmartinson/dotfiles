@@ -807,6 +807,13 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 # defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
 ###############################################################################
+# GPGMail 2                                                                   #
+###############################################################################
+
+# Disable signing emails by default
+# defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
+
+###############################################################################
 # Do some clean up work.
 ###############################################################################
 
