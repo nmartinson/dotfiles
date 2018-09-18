@@ -32,10 +32,10 @@ formulae=(
 for formula in "${formulae[@]}"; do
     brew ls "$formula" > /dev/null 2>&1
     if [ $? -ne 0 ]; then
-        echo "==> Installing $formula"
+        echo "Installing $formula"
         brew install $formula
     else
-        echo "==> $formula is already installed"
-        brew ls --versions "$formula"
+        version=$(brew ls --versions "$formula" | awk '{print $NF}')
+        echo "$formula $version is already installed"
     fi
 done

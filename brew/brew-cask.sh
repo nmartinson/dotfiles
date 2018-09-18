@@ -17,7 +17,6 @@ apps=(
     1password
     alfred
     android-studio
-    appcleaner
     dash
     firefox
     google-chrome
@@ -36,10 +35,10 @@ apps=(
 for app in "${apps[@]}"; do
     brew cask ls "$app" > /dev/null 2>&1
     if [ $? -ne 0 ]; then
-        echo "==> Installing $app"
+        echo "Installing $app"
         brew cask install $app
     else
-        echo "==> $app already installed"
-        brew cask ls --versions "$app"
+        version=$(brew cask ls --versions "$app" | awk '{print $NF}')
+        echo "$app $version is already installed"
     fi
 done
