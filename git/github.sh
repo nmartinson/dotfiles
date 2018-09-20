@@ -48,3 +48,6 @@ function main() {
 }
 
 main
+
+unset ssh_url
+unset workspace
