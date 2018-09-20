@@ -14,6 +14,6 @@ source "$GLOBAL_DOTFILES_DIR/git/install.sh"
 source "$GLOBAL_DOTFILES_DIR/ruby/install.sh"
 source "$GLOBAL_DOTFILES_DIR/zsh/install.sh"
 
-# sh "$GLOBAL_DOTFILES_DIR/macos/defaults.sh"
+sh "$GLOBAL_DOTFILES_DIR/macos/defaults.sh"
 
 unset GLOBAL_DOTFILES_DIR
