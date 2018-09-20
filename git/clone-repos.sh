@@ -2,8 +2,10 @@
 
 set -e
 
+echo "==> Clone repositories..."
+
 ssh_url="git@github.com:alexiscrack3"
-workspace="$HOME/test"
+workspace="$HOME/Development"
 
 repos=(
     bash-cheat-sheet
@@ -12,37 +14,36 @@ repos=(
 )
 
 function save_current_directory() {
-  pushd "$pwd"
+    pushd "$pwd"
+}
+
+function restore_previous_directory() {
+    popd
 }
 
 function clone_all_repos() {
-  mkdir -p $workspace
-  cd $workspace
-  for repo in "${repos[@]}"; do
+    mkdir -p $workspace
+    cd $workspace
+    for repo in "${repos[@]}"; do
     clone_repo $repo
-  done
+    done
 }
 
 function clone_repo() {
-  repo=$1
+    repo=$1
 
-  if [ -d "$workspace/$repo" ]; then
+    if [ -d "$workspace/$repo" ]; then
     echo "Repo ${repo} already exists"
-  else
+    else
     echo "Cloning ${repo} into $workspace/$repo"
     git clone "$ssh_url/${repo}.git"
-  fi
-}
-
-function restore_current_directory {
-  popd
+    fi
 }
 
 function main {
-  echo "==> Cloning all repos"
-  save_current_directory
-  clone_all_repos
-  restore_current_directory
+    save_current_directory
+    clone_all_repos
+    restore_previous_directory
 }
 
 main
