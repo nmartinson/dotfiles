@@ -30,7 +30,7 @@ formulae=(
 )
 
 for formula in "${formulae[@]}"; do
-    brew ls "$formula" > /dev/null 2>&1
+    brew ls "$formula" &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $formula"
         brew install $formula

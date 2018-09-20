@@ -3,7 +3,7 @@ if ! is-macos -o ! -is-executable brew; then
     return
 fi
 
-brew cask > /dev/null 2>&1
+brew cask &> /dev/null
 if [ $? -ne 0 ]; then
     echo "==> Installing homebrew/cask"
     brew tap homebrew/cask
@@ -33,7 +33,7 @@ apps=(
 )
 
 for app in "${apps[@]}"; do
-    brew cask ls "$app" > /dev/null 2>&1
+    brew cask ls "$app" &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $app"
         brew cask install $app

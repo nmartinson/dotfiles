@@ -13,7 +13,7 @@ fonts=(
 )
 
 for font in "${fonts[@]}"; do
-    brew cask ls "$font" > /dev/null 2>&1
+    brew cask ls "$font" &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $font"
         brew cask install $font

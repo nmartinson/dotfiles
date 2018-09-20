@@ -12,7 +12,7 @@ apps=(
 )
 
 for app in "${apps[@]}"; do
-    brew cask ls "$app" > /dev/null 2>&1
+    brew cask ls "$app" &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $app"
         brew cask install $app
