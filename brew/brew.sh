@@ -1,5 +1,5 @@
-if ! is-macos -o ! -is-executable ruby -o ! is-executable curl -o ! is-executable git; then
-    echo "Skipped: brew (missing: ruby, curl and/or git)"
+if ! is-macos -o ! is-executable ruby -o ! is-executable curl -o ! is-executable git; then
+    echo "Skipped: missing ruby, curl and/or git"
     return
 fi
 

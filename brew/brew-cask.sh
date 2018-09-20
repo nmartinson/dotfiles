@@ -1,4 +1,4 @@
-if ! is-macos -o ! -is-executable brew; then
+if ! is-macos -o ! is-executable brew; then
     echo "Skipped: homebrew/cask"
     return
 fi
