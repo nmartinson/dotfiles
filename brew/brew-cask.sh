@@ -39,6 +39,6 @@ for app in "${apps[@]}"; do
         brew cask install $app
     else
         version=$(brew cask ls --versions "$app" | awk '{print $NF}')
-        echo "$app $version is already installed"
+        echo "$app ($version) is already installed"
     fi
 done

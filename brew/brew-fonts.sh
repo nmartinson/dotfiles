@@ -19,6 +19,6 @@ for font in "${fonts[@]}"; do
         brew cask install $font
     else
         version=$(brew cask ls --versions "$font" | awk '{print $NF}')
-        echo "$font $version is already installed"
+        echo "$font ($version) is already installed"
     fi
 done

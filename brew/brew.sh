@@ -36,6 +36,6 @@ for formula in "${formulae[@]}"; do
         brew install $formula
     else
         version=$(brew ls --versions "$formula" | awk '{print $NF}')
-        echo "$formula $version is already installed"
+        echo "$formula ($version) is already installed"
     fi
 done
