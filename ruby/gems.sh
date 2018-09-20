@@ -15,7 +15,7 @@ for gem in "${gems[@]}"; do
         echo "Installing $gem"
         gem install $gem
     else
-        version=$(gem list | grep pivotal_git_scripts | awk '{print $2}' | sed 's/[()]//g')
+        version=$(gem list | grep $gem | awk '{print $2}' | sed 's/[()]//g')
         echo "$gem ($version) is already installed"
     fi
 done
