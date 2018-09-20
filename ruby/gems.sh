@@ -9,8 +9,8 @@ gems=(
     pivotal_git_scripts
 )
 
-for gem in "${gems[@]}"; do
-    gem list -i "$gem" &> /dev/null
+for gem in ${gems[@]}; do
+    gem list -i $gem &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $gem"
         gem install $gem

@@ -29,13 +29,13 @@ formulae=(
     zsh-syntax-highlighting
 )
 
-for formula in "${formulae[@]}"; do
-    brew ls "$formula" &> /dev/null
+for formula in ${formulae[@]}; do
+    brew ls $formula &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $formula"
         brew install $formula
     else
-        version=$(brew ls --versions "$formula" | awk '{print $NF}')
+        version=$(brew ls --versions $formula | awk '{print $NF}')
         echo "$formula ($version) is already installed"
     fi
 done

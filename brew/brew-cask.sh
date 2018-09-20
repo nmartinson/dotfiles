@@ -3,7 +3,7 @@ if ! is-macos -o ! is-executable brew; then
     return
 fi
 
-brew cask &> /dev/null
+brew tap | grep "homebrew/cask$" &> /dev/null
 if [ $? -ne 0 ]; then
     echo "Installing homebrew/cask"
     brew tap homebrew/cask
@@ -32,13 +32,13 @@ apps=(
     vlc
 )
 
-for app in "${apps[@]}"; do
-    brew cask ls "$app" &> /dev/null
+for app in ${apps[@]}; do
+    brew cask ls $app &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $app"
         brew cask install $app
     else
-        version=$(brew cask ls --versions "$app" | awk '{print $NF}')
+        version=$(brew cask ls --versions $app | awk '{print $NF}')
         echo "$app ($version) is already installed"
     fi
 done

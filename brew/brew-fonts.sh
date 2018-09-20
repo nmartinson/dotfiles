@@ -1,9 +1,15 @@
 if ! is-macos -o ! is-executable brew; then
-    echo "Skipped: caskroom/fonts"
+    echo "Skipped: homebrew/cask-fonts"
     return
 fi
 
-brew tap caskroom/fonts
+brew tap | grep "homebrew/cask-fonts$" &> /dev/null
+if [ $? -ne 0 ]; then
+    echo "Installing homebrew/cask-fonts"
+    brew tap homebrew/cask-fonts
+else
+    echo "homebrew/cask-fonts is already installed"
+fi
 
 echo "==> Installing fonts"
 
@@ -12,13 +18,13 @@ fonts=(
     font-source-code-pro
 )
 
-for font in "${fonts[@]}"; do
-    brew cask ls "$font" &> /dev/null
+for font in ${fonts[@]}; do
+    brew cask ls $font &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing $font"
         brew cask install $font
     else
-        version=$(brew cask ls --versions "$font" | awk '{print $NF}')
+        version=$(brew cask ls --versions $font | awk '{print $NF}')
         echo "$font ($version) is already installed"
     fi
 done

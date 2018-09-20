@@ -941,8 +941,8 @@ apps=(
 	Twitter
 )
 
-for app in "${apps[@]}"; do
-	killall "${app}" > /dev/null 2>&1
+for app in ${apps[@]}; do
+	killall $app > /dev/null 2>&1
 done
 
 # Wait a bit before moving on...

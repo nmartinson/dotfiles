@@ -25,7 +25,7 @@ function clone_all_repos() {
     mkdir -p $workspace
     cd $workspace
 
-    for repo in "${repos[@]}"; do
+    for repo in ${repos[@]}; do
         clone_repo $repo
     done
 }
@@ -34,9 +34,9 @@ function clone_repo() {
     repo=$1
 
     if [ -d "$workspace/$repo" ]; then
-        echo "Repo ${repo} already exists"
+        echo "Repo $repo already exists"
     else
-        echo "Cloning ${repo}"
+        echo "Cloning $repo"
         git clone "$ssh_url/${repo}.git"
     fi
 }
