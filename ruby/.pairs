@@ -1,0 +1,18 @@
+global: true
+pairs:
+    # <initials>: <Firstname> <Lastname>[; <email-id>]
+    ao: Alexis Ortega; alexis.ortega
+    bl: Brian Lombardo; brian.lombardo
+    cc: CC Cooper; cc.cooper
+    eo: Emmanuel Ortiguela; emmanuel.ortiguela
+    hm: Heather Meadow; heather.meadow
+    ih: Isaac Hatton; isaac.hatton
+    jw: Jonathan Weinberg; jonathan.weinberg
+    ob: Orson Bushnell; orson.bushnell
+    tr: Trevor Ranney; trevor.ranney
+    tt: Tyler Thompson; tyler.thompson
+email:
+    prefix:
+    # prefix: pair
+    domain: asynchrony.com
+    # no_solo_prefix: true

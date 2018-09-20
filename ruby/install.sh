@@ -32,4 +32,6 @@ fi
 
 sh "$DOTFILES_DIR/ruby/gems.sh"
 
+ln -sfv "$DOTFILES_DIR/ruby/.pairs" ~
+
 unset DOTFILES_DIR
