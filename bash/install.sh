@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo "==> Setting up bash..."
 
 DOTFILES_DIR=~/.dotfiles

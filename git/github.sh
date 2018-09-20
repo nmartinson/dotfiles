@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo "==> Cloning GitHub repositories..."
 
 ssh_url="git@github.com:alexiscrack3"

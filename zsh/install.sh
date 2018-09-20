@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo "==> Setting up zsh..."
 
 DOTFILES_DIR=~/.dotfiles

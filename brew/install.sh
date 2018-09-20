@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo "==> Setting up brew..."
 
 DOTFILES_DIR=~/.dotfiles

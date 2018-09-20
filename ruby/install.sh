@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo "==> Setting up rvm, ruby, and rails..."
 
 DOTFILES_DIR=~/.dotfiles
