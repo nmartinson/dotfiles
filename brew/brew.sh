@@ -1,13 +1,13 @@
 if ! is-macos -o ! -is-executable ruby -o ! is-executable curl -o ! is-executable git; then
-    echo "Skipped: Homebrew (missing: ruby, curl and/or git)"
+    echo "Skipped: brew (missing: ruby, curl and/or git)"
     return
 fi
 
 if test ! $(which brew); then
-    echo "==> Installing brew"
+    echo "Installing brew"
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    echo "==> brew is already installed"
+    echo "brew is already installed"
 fi
 
 brew update

@@ -9,6 +9,6 @@ DOTFILES_DIR=~/.dotfiles
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
-sh "$DOTFILES_DIR/git/clone-repos.sh"
+sh "$DOTFILES_DIR/git/github.sh"
 
 unset DOTFILES_DIR

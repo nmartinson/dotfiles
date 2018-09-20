@@ -2,10 +2,10 @@
 
 case $SHELL in
     */zsh)
-        echo "==> zsh is already the default shell"
+        echo "zsh is already the default shell"
         ;;
     */bash)
-        echo "==> Set zsh as default shell"
+        echo "Set zsh as default shell"
         sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
         ;;
     *)

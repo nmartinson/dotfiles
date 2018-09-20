@@ -5,10 +5,10 @@ fi
 
 brew cask &> /dev/null
 if [ $? -ne 0 ]; then
-    echo "==> Installing homebrew/cask"
+    echo "Installing homebrew/cask"
     brew tap homebrew/cask
 else
-    echo "==> homebrew/cask is already installed"
+    echo "homebrew/cask is already installed"
 fi
 
 echo "==> Installing apps"

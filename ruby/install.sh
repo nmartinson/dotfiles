@@ -2,7 +2,7 @@
 
 set -e
 
-echo "==> Setting up rvm..."
+echo "==> Setting up rvm, ruby, and rails..."
 
 if test ! $(which rvm); then
     echo "Installing rvm"
@@ -12,16 +12,12 @@ else
     echo "rvm is already installed"
 fi
 
-echo "==> Setting up ruby..."
-
 if test ! $(which ruby); then
     echo "Installing ruby"
     rvm use ruby --install --default
 else
     echo "ruby is already installed"
 fi
-
-echo "==> Setting up rails..."
 
 if test ! $(which rails); then
     echo "Installing rails"
