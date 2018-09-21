@@ -1,10 +1,12 @@
 #!/bin/bash
 
-echo "==> Setting up rvm, ruby, and rails..."
-
 DOTFILES_DIR=~/.dotfiles
 
 PATH="$DOTFILES_DIR/bin:$PATH"
+
+source "$DOTFILES_DIR/lib/colors.sh"
+
+echo "==> ${BOLD}Setting up rvm, ruby, and rails...${NORMAL}"
 
 if test ! $(which rvm); then
     echo "Installing rvm"
@@ -28,7 +30,7 @@ else
     echo "rails is already installed"
 fi
 
-sh "$DOTFILES_DIR/ruby/gems.sh"
+source "$DOTFILES_DIR/ruby/gems.sh"
 
 ln -sfv "$DOTFILES_DIR/ruby/.pairs" ~
 

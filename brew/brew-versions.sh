@@ -11,7 +11,7 @@ else
     echo "homebrew/cask-versions is already installed"
 fi
 
-echo "==> Installing apps"
+echo "==> ${BOLD}Installing apps${NORMAL}"
 
 apps=(
     java8

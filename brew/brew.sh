@@ -12,7 +12,7 @@ fi
 
 brew update
 
-echo "==> Installing formulae"
+echo "==> ${BOLD}Installing formulae${NORMAL}"
 
 formulae=(
     cocoapods

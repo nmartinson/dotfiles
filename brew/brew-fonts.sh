@@ -11,7 +11,7 @@ else
     echo "homebrew/cask-fonts is already installed"
 fi
 
-echo "==> Installing fonts"
+echo "==> ${BOLD}Installing fonts${NORMAL}"
 
 fonts=(
     font-droid-sans-mono-for-powerline

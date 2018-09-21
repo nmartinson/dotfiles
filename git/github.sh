@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "==> Cloning GitHub repositories..."
+echo "==> ${BOLD}Cloning GitHub repositories${NORMAL}"
 
 ssh_url="git@github.com:alexiscrack3"
 workspace="$HOME/Development"

@@ -3,7 +3,7 @@ if ! is-executable ruby; then
     return
 fi
 
-echo "==> Installing gems"
+echo "==> ${BOLD}Installing gems${NORMAL}"
 
 gems=(
     pivotal_git_scripts

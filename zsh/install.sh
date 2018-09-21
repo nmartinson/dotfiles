@@ -1,8 +1,10 @@
 #!/bin/bash
 
-echo "==> Setting up zsh..."
-
 DOTFILES_DIR=~/.dotfiles
+
+source "$DOTFILES_DIR/lib/colors.sh"
+
+echo "==> ${BOLD}Setting up zsh...${NORMAL}"
 
 source "$DOTFILES_DIR/zsh/zsh.sh"
 source "$DOTFILES_DIR/zsh/oh-my-zsh.sh"

@@ -12,5 +12,3 @@ else
     BOLD=""
     NORMAL=""
 fi
-
-echo "THIS IS = $BOLD"
