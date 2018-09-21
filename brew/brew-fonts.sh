@@ -28,3 +28,6 @@ for font in ${fonts[@]}; do
         echo "$font ($version) is already installed"
     fi
 done
+
+echo ""
+

@@ -39,3 +39,5 @@ for formula in ${formulae[@]}; do
         echo "$formula ($version) is already installed"
     fi
 done
+
+echo ""

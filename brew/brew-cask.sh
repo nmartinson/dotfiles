@@ -42,3 +42,6 @@ for app in ${apps[@]}; do
         echo "$app ($version) is already installed"
     fi
 done
+
+echo ""
+

@@ -43,6 +43,8 @@ function main() {
     save_current_directory
     clone_all_repos
     restore_previous_directory
+
+    echo ""
 }
 
 main

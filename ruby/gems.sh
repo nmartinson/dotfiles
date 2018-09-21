@@ -19,3 +19,5 @@ for gem in ${gems[@]}; do
         echo "$gem ($version) is already installed"
     fi
 done
+
+echo ""
