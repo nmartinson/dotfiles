@@ -917,36 +917,39 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 
 apps=(
-	Activity Monitor
-	Address Book
-	Calendar
+	# Activity\ Monitor
+	# Address Book
+	# Calendar
 	cfprefsd
-	Contacts
+	# Contacts
 	Dock
 	Finder
-	Google Chrome
-	Google Chrome Canary
-	iCal
-	Mail
-	Messages
-	Opera
-	Photos
-	Safari
-	SizeUp
-	Spectacle
+	# Google\ Chrome
+	# Google\ Chrome\ Canary
+	# iCal
+	# Mail
+	# Messages
+	# Opera
+	# Photos
+	# Safari
+	# SizeUp
+	# Spectacle
 	SystemUIServer
-	Terminal
-	Transmission
-	Tweetbot
-	Twitter
+	# Terminal
+	# Transmission
+	# Tweetbot
+	# Twitter
 )
 
-for app in ${apps[@]}; do
-	killall $app > /dev/null 2>&1
+for app in "${apps[@]}"; do
+	killall "$app" > /dev/null 2>&1
 done
 
 # Wait a bit before moving on...
 sleep 1
+
+# Clear the icon cache when you start seeing generic icons in Finder or the Dock
+sudo rm -rfv /Library/Caches/com.apple.iconservices.store; sudo find /private/var/folders/ \( -name com.apple.dock.iconcache -or -name com.apple.iconservices \) -exec rm -rfv {} \; ; sleep 3;sudo touch /Applications/* ; killall Dock; killall Finder
 
 # ...and then.
 echo "Success! Defaults are set. Some changes will not take effect until you reboot your machine."
