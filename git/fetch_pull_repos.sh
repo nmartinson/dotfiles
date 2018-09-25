@@ -15,15 +15,18 @@ function main() {
             git fetch -p
             git stash -u
             
-            git rev-parse --verify develop &> /dev/null
-            if [ $? -eq 1 ]; then
-                git fetch origin develop:develop
+            git rev-parse --verify master &> /dev/null
+            if [ $? -eq 0 ]; then
+                git checkout master
+                git reset --hard origin/master
             fi
             
-            git rev-parse --verify master &> /dev/null
-            if [ $? -eq 1 ]; then
-                git fetch origin master:master
+            git rev-parse --verify develop &> /dev/null
+            if [ $? -eq 0 ]; then
+                git checkout develop
+                git reset --hard origin/develop
             fi
+
             cd ..
         fi
     done
