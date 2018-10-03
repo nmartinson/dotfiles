@@ -15,13 +15,17 @@ function main() {
             git fetch -p
             git stash -u
 
+            current_branch=$(git rev-parse --abbrev-ref HEAD)
+
             for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do
-                git rev-parse --verify $branch &> /dev/null
+                git rev-parse --verify $branch &> /dev/null # checks if local branch exists
                 if [ $? -eq 0 ]; then
                     git checkout $branch
                     git reset --hard origin/$branch
                 fi
             done
+
+            git checkout $current_branch
 
             cd ..
         fi
