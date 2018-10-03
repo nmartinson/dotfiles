@@ -14,18 +14,14 @@ function main() {
             pwd
             git fetch -p
             git stash -u
-            
-            git rev-parse --verify master &> /dev/null
-            if [ $? -eq 0 ]; then
-                git checkout master
-                git reset --hard origin/master
-            fi
-            
-            git rev-parse --verify develop &> /dev/null
-            if [ $? -eq 0 ]; then
-                git checkout develop
-                git reset --hard origin/develop
-            fi
+
+            for branch in $(git for-each-ref --format='%(refname:short)' refs/heads/); do
+                git rev-parse --verify $branch &> /dev/null
+                if [ $? -eq 0 ]; then
+                    git checkout $branch
+                    git reset --hard origin/$branch
+                fi
+            done
 
             cd ..
         fi
