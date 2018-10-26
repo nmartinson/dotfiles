@@ -6,7 +6,7 @@ workspace="$HOME/Development/Asynchrony"
 
 function main() {
     cd $workspace
-    repos=($(ls | grep "myhome"))
+    repos=($(ls | grep "my-home"))
     # echo "LENGTH = ${#repos[@]}"
     for repo in ${repos[@]}; do
         if [ -d "$workspace/$repo" ]; then
