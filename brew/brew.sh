@@ -20,7 +20,7 @@ formulae=(
     dockutil
     htop
     mongodb
-    node
+    nvm
     postgresql
     thefuck
     tree
@@ -39,5 +39,18 @@ for formula in ${formulae[@]}; do
         echo "$formula ($version) is already installed"
     fi
 done
+
+# Node Version Manager
+NVM_DIR="~/.nvm"
+if [ -d $NVM_DIR ]; then
+    echo "Directory $NVM_DIR already exists"
+else
+    echo "Making directory $NVM_DIR"
+    mkdir $NVM_DIR
+fi
+
+nvm install --lts
+
+unset NVM_DIR
 
 echo ""

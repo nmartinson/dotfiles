@@ -147,5 +147,9 @@ export PATH="$ANDROID_HOME/platform-tools:$PATH"
 #export PATH="$ANDROID_HOME/emulator:$PATH"
 #export PATH="$ANDROID_HOME/tools/bin:$PATH"
 
+# Add NVM to PATH for scripting
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
