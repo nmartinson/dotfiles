@@ -6,7 +6,8 @@
 	lds = log --pretty=dateformat --decorate --date=short
 	le = log --oneline --decorate
 	lg = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
-	lgh = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>' --abbrev-commit
+	lgh = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
+	lgf = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>' --abbrev-commit
 	ll = log --pretty=simpleformat --decorate --numstat
 	lnc = log --pretty=format:'%h\\ %s\\ [%cn]'
 	ls = log --pretty=simpleformat --decorate
