@@ -68,8 +68,8 @@ DEFAULT_USER="$USER"
 # Add wisely, as too many plugins slow down shell startup.
 
 # MacOS
-plugins=(brew gitignore themes)
-# plugins+=(cloudapp osx)
+plugins=(brew gitignore)
+# plugins+=(cloudapp osx themes)
 
 # Build Tools
 # plugins+=(docker heroku postgres)
@@ -84,7 +84,7 @@ plugins+=(pod)
 # plugins+=(go)
 
 # Node
-# plugins+=(node npm)
+plugins+=(node nvm npm)
 
 # Ruby
 plugins+=(ruby)
