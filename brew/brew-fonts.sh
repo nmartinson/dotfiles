@@ -30,4 +30,3 @@ for font in ${fonts[@]}; do
 done
 
 echo ""
-

@@ -29,4 +29,3 @@ for app in ${apps[@]}; do
 done
 
 echo ""
-
