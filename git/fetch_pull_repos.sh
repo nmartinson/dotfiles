@@ -28,6 +28,7 @@ function main() {
             git checkout $current_branch
 
             cd ..
+            echo ""
         fi
     done
 }
