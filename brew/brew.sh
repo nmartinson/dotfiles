@@ -21,6 +21,7 @@ formulae=(
     htop
     mongodb
     postgresql
+    redis
     thefuck
     tree
     zsh
