@@ -32,6 +32,8 @@
 [grep]
 	extendRegexp = true
 	lineNumber = true
+[init]
+	templatedir = ~/.dotfiles/git/templates
 [merge]
 	conflictstyle = merge
 [pretty]
