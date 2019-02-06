@@ -11,13 +11,26 @@
 	ll = log --pretty=simpleformat --decorate --numstat
 	lnc = log --pretty=format:'%h\\ %s\\ [%cn]'
 	ls = log --pretty=simpleformat --decorate
-    # Find out who to thank for the magical piece of code
+	# Find out who to thank for the magical piece of code
 	praise = blame
 	remotes = !git for-each-ref --sort=-committerdate refs/remotes/ --format='%(color:red)%(objectname:short)%(color:reset)^%(color:yellow)%(refname:short)%(color:reset)^(%(color:green)%(committerdate:relative)%(color:reset))^<%(color:blue)%(authorname)%(color:reset)>' | column -t -s '^'
 	sanitize = ls-files -i --exclude-from=.gitignore | xargs git rm --cached
-    # Delete local branches that were merged into your current branch
+	# Delete local branches that were merged into your current branch
 	tidy = !git branch | grep -v \\* | xargs git branch -d
 	zip = !git archive --format=zip --output=latest.zip HEAD
+
+	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+	
+	# Remove submodule
+
+	rm-sub = "!f() { \
+		submodule="$1"; \
+		git submodule deinit -f "$submodule"; \
+		rm -rf ".git/modules/$submodule"; \
+		git rm -f "$submodule"; \
+		git config -f ".git/config" --remove-section "submodule.$submodule" 2> /dev/null; \
+	}; f"
+
 [clean]
 	requireForce = true
 [color]
