@@ -10,7 +10,7 @@ Prerequisites:
 Then run these commands in the terminal:
 
 ```bash
-git git@github.com:alexiscrack3/dotfiles.git ~/.dotfiles
+git clone git@github.com:alexiscrack3/dotfiles.git ~/.dotfiles
 ```
 
 ```bash
