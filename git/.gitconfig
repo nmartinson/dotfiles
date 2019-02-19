@@ -2,6 +2,9 @@
 	name = Alexis Ortega
 	email = alexis.oc3@gmail.com
 [alias]
+	hide = update-index --assume-unchanged
+	unhide = update-index --no-assume-unchanged
+	hidden = !git ls-files -v | grep \"^[a-z]\"
 	ld = log --pretty=dateformat --decorate --date=relative
 	lds = log --pretty=dateformat --decorate --date=short
 	le = log --oneline --decorate
