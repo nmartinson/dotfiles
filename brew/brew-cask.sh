@@ -30,6 +30,7 @@ apps=(
     transmission
     visual-studio-code
     vlc
+    zeplin
 )
 
 for app in ${apps[@]}; do
