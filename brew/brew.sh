@@ -22,6 +22,7 @@ formulae=(
     mongodb
     postgresql
     redis
+    scrcpy
     thefuck
     tree
     zsh
