@@ -2,15 +2,11 @@ global: true
 pairs:
     # <initials>: <Firstname> <Lastname>[; <email-id>]
     ao: Alexis Ortega; alexis.ortega
-    bl: Brian Lombardo; brian.lombardo
-    cc: CC Cooper; cc.cooper
+    cb: Clint Bandy; clint.bandy
     eo: Emmanuel Ortiguela; emmanuel.ortiguela
-    hm: Heather Meadow; heather.meadow
-    ih: Isaac Hatton; isaac.hatton
-    jw: Jonathan Weinberg; jonathan.weinberg
+    ga: Geoff Armstrong; geoff.armstrong
     jq: John Qualls; john.qualls
-    ob: Orson Bushnell; orson.bushnell
-    tr: Trevor Ranney; trevor.ranney
+    lh: Lex Hubbard; lex.hubbard
     tt: Tyler Thompson; tyler.thompson
 email:
     prefix:
