@@ -15,6 +15,7 @@ brew update
 echo "==> ${BOLD}Installing formulae${NORMAL}"
 
 formulae=(
+    apktool
     cocoapods
     diff-so-fancy
     dockutil
