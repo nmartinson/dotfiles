@@ -22,6 +22,7 @@ apps=(
     google-chrome
     google-backup-and-sync
     iterm2
+    ngrok
     postman
     qlmarkdown
     quicklook-json
