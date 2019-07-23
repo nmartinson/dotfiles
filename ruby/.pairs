@@ -2,12 +2,10 @@ global: true
 pairs:
     # <initials>: <Firstname> <Lastname>[; <email-id>]
     ao: Alexis Ortega; alexis.ortega
+    bs: Brian Slick; brian.slick
     cb: Clint Bandy; clint.bandy
-    eo: Emmanuel Ortiguela; emmanuel.ortiguela
     ga: Geoff Armstrong; geoff.armstrong
     jq: John Qualls; john.qualls
-    lh: Lex Hubbard; lex.hubbard
-    tt: Tyler Thompson; tyler.thompson
 email:
     prefix:
     # prefix: pair
