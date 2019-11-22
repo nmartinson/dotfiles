@@ -26,6 +26,8 @@ apps=(
     visual-studio-code
     vlc
     lastpass
+    nordvpn
+    arduino
 )
 
 for app in ${apps[@]}; do
