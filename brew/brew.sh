@@ -15,14 +15,13 @@ brew update
 echo "==> ${BOLD}Installing formulae${NORMAL}"
 
 formulae=(
+    git
+    sqlite
     apktool
-    cocoapods
     diff-so-fancy
     dockutil
     htop
-    mongodb
     postgresql
-    redis
     scrcpy
     thefuck
     tree
