@@ -2,7 +2,7 @@
 
 echo "==> Fetching and pulling repositories..."
 
-workspace="$HOME/Development/Asynchrony"
+workspace="$HOME/Development"
 
 function main() {
     cd $workspace
