@@ -14,24 +14,18 @@ fi
 echo "==> ${BOLD}Installing apps${NORMAL}"
 
 apps=(
-    1password
     alfred
     android-studio
     dash
-    firefox
-    google-chrome
-    google-backup-and-sync
     iterm2
     ngrok
     postman
-    qlmarkdown
     quicklook-json
     slack
-    teamviewer
     transmission
     visual-studio-code
     vlc
-    zeplin
+    lastpass
 )
 
 for app in ${apps[@]}; do
