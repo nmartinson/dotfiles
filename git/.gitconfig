@@ -2,6 +2,8 @@
 	name = Nick Martinson
 	email = nick.martinson@wwt.com
 [alias]
+	st = status
+	co = checkout
 	hide = update-index --assume-unchanged
 	unhide = update-index --no-assume-unchanged
 	hidden = !git ls-files -v | grep \"^[a-z]\"
@@ -21,7 +23,7 @@
 	# Delete local branches that were merged into your current branch
 	tidy = !git branch | grep -v -e \\* -e master -e develop | xargs git branch -d
 	zip = !git archive --format=zip --output=latest.zip HEAD
-
+	up = "!f() { git checkout $1 && git pull && git submodule update; }; f"
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	
 	# Remove submodule
@@ -46,6 +48,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
+	autocrlf = input
 [diff]
 	algorithm = default
 [grep]
