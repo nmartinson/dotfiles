@@ -14,8 +14,9 @@ fi
 echo "==> ${BOLD}Installing apps${NORMAL}"
 
 apps=(
-    alfred
+    alfred3
     android-studio
+    android-sdk
     dash
     iterm2
     ngrok
