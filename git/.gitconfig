@@ -1,6 +1,7 @@
 [user]
 	name = Nick Martinson
 	email = nick.martinson@wwt.com
+	initials = nm
 [alias]
 	st = status
 	co = checkout
@@ -16,7 +17,6 @@
 	ll = log --pretty=simpleformat --decorate --numstat
 	lnc = log --pretty=format:'%h\\ %s\\ [%cn]'
 	ls = log --pretty=simpleformat --decorate
-	# Find out who to thank for the magical piece of code
 	praise = blame
 	remotes = !git for-each-ref --sort=committerdate refs/remotes/ --format='%(color:red)%(objectname:short)%(color:reset)^%(color:yellow)%(refname:short)%(color:reset)^(%(color:green)%(committerdate:relative)%(color:reset))^<%(color:blue)%(authorname)%(color:reset)>' | column -t -s '^'
 	sanitize = ls-files -i --exclude-from=.gitignore | xargs git rm --cached
@@ -27,7 +27,6 @@
 	# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	
 	# Remove submodule
-
 	rm-sub = "!f() { \
 		submodule="$1"; \
 		git submodule deinit -f "$submodule"; \

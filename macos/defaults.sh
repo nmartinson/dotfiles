@@ -80,7 +80,7 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
 # Disable the crash reporter
-# defaults write com.apple.CrashReporter DialogType -string "none"
+defaults write com.apple.CrashReporter DialogType -string "none"
 
 # Set Help Viewer windows to non-floating mode
 # defaults write com.apple.helpviewer DevMode -bool true
@@ -159,11 +159,11 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
 
 # Increase sound quality for Bluetooth headphones/headsets
-# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 # Enable full keyboard access for all controls
 # (e.g. enable Tab in modal dialogs)
-# defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -205,7 +205,7 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 # defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
-# defaults write com.apple.screencapture location -string "${HOME}/Desktop"
+defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
 # defaults write com.apple.screencapture type -string "png"
@@ -410,7 +410,7 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide -bool true
 
 # Make Dock icons of hidden applications translucent
 # defaults write com.apple.dock showhidden -bool true
@@ -574,7 +574,7 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 ###############################################################################
 
 # Hide Spotlight tray-icon (and subsequent helper)
-# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
@@ -679,7 +679,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 # open "${HOME}/init/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
-# defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 ###############################################################################
 # Time Machine                                                                #
@@ -705,8 +705,8 @@ hash tmutil &> /dev/null && sudo tmutil disable
 # defaults write com.apple.ActivityMonitor ShowCategory -int 0
 
 # Sort Activity Monitor results by CPU usage
-# defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
-# defaults write com.apple.ActivityMonitor SortDirection -int 0
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 ###############################################################################
 # Address Book, Dashboard, iCal, TextEdit, and Disk Utility                   #

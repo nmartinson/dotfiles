@@ -4,7 +4,8 @@ echo "==> Setting up your dock..."
 
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Android Studio.app"
-dockutil --no-restart --add "/Applications/Safari.app"
+# dockutil --no-restart --add "/Applications/Safari.app"
+dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/Android Messages.app"
 dockutil --no-restart --add "/Applications/Adobe Lightroom Classic.app"
 dockutil --no-restart --add "/Applications/iTerm.app"
