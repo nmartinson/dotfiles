@@ -14,6 +14,7 @@ fi
 echo "==> ${BOLD}Installing apps${NORMAL}"
 
 apps=(
+    itsycal
     alfred3
     android-studio
     android-sdk
